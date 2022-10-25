@@ -3,10 +3,10 @@ import { FlatList, ImageBackground, Image, StyleSheet, Text, View } from 'react-
 
 const dummyArray = [
     { id: '1', value: 'Flamengo', image: require("../assets/flamengo.png"), imageBanckground: require("../assets/flamengo-maracana.jpg") },
-    { id: '2', value: 'Vasco' , image: require("../assets/fluminense.png"), imageBanckground: require("../assets/fluminense-maracana.jpg")},
+    { id: '2', value: 'Vasco', image: require("../assets/vasco.png"), imageBanckground: require("../assets/vasco-maracana.jpg") },
     { id: '3', value: 'Fluminense', image: require("../assets/fluminense.png"), imageBanckground: require("../assets/fluminense-maracana.jpg") },
-    { id: '4', value: 'Botafogo' },
-    { id: '5', value: 'Sampaio Corrêa' },
+    { id: '4', value: 'Botafogo', image: require("../assets/botafogo.png"), imageBanckground: require("../assets/botafogo-maracana.jpg") },
+    { id: '5', value: 'Sampaio Corrêa', image: require("../assets/sampaio-correa.png"), imageBanckground: require("../assets/sampaio-correa-estadio.webp") },
 ];
 
 export default function CampeonatoBrasileiroRJ() {
@@ -82,15 +82,19 @@ const styles = StyleSheet.create({
     },
     item: {
         padding: 10,
-        fontSize: 28,
-        marginVertical: 18,
-        marginHorizontal: 26,
+        fontSize: 25,
+        // marginVertical: 18,
+        // marginHorizontal: 26,
         height: 44,
         color: '#ff0',
+        width: 200,
     },
     imageBanckground: {
         flex: 1,
-        justifyContent: 'space-between'
+        justifyContent: 'space-around',
+        flexDirection: 'row',
+        margin: 5,
+        padding: 20,
     }
 });
 
